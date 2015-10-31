@@ -1,7 +1,9 @@
 FsControl
 =========
 
-A base library with a collection of generic methods overloaded for .NET and F# core types but extensible to other types at the same time.
+FsControl is a library that enhances the F# coding experience by providing the following two innovations.
+1. A mechanism for defining standalone generic functions in F# similar to Haskell, that are resolved at compile time to actual implementation types using static class method overloading, type extensions, and type inferencing. For example, a generic definition of `Map` would resolve to `List.map`, `Array.map`, `Seq.map`, or whatever provided it had a compatible definition of map resolvable at compile time.
+2. The implementation of a set of Haskell inspired standalone function definitions together with their implementation over a set of .NET and F# core types.
 
 ### Getting Started
 
